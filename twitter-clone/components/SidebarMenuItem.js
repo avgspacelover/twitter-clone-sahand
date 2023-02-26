@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export const SidebarMenuItem = ({text,Icon, active}) => {
   return (

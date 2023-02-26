@@ -1,6 +1,6 @@
 import { EmojiHappyIcon, PhotographIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
-import React from 'react'
+
 
 export const Input = () => {
   return (
