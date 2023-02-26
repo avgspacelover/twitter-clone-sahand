@@ -1,5 +1,6 @@
 import { SparklesIcon } from '@heroicons/react/outline'
-import React from 'react'
+import { Input } from './Input'
+
 
 export const Feed = () => {
   return (
@@ -10,7 +11,7 @@ export const Feed = () => {
                 <SparklesIcon className="h-5"/>
             </div>
         </div>
-        Home
+        <Input />
     </div>
   )
 }
