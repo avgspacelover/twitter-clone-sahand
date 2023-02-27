@@ -19,7 +19,7 @@ export default function Home({newsResults}) {
 
        <Feed />
 
-       <Widgets newsResults={newsResults.articles} />
+       <Widgets newsResults={newsResults?.articles} />
 
       </main>
 

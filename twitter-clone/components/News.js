@@ -10,7 +10,7 @@ export const News = ({article}) => {
             </div>
             <img className="rounded-xl"width="70" src={article.urlToImage} alt="" />
         </div>
-        News
+
     </a>
   )
 }

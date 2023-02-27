@@ -21,8 +21,8 @@ export const Widgets = ({newsResults}) => {
                 What's Happening?
 
             </h4>
-            {newsResults.slice(0,artNum).map((articles)=> (
-                <News key={articles.title} article={article}/>
+            {newsResults.slice(0,artNum).map((article)=> (
+                <News key={article.title} article={article}/>
             ))}
 
             <button onClick={()=>setArtNum(artNum+3)} className="text-blue-300 pl-4 pb-3 hover:text-blue-400">
