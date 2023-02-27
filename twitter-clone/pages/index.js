@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import { Feed } from '../components/Feed'
 import { Sidebar } from '../components/Sidebar'
+import { Widgets } from '../components/Widgets'
 
 
 
@@ -14,6 +16,10 @@ export default function Home() {
 
       <main className="flex min-h-screen max-w-7x1 mx-auto">
        <Sidebar />
+
+       <Feed />
+
+       <Widgets />
 
       </main>
 
