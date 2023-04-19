@@ -1,9 +1,9 @@
 import { SparklesIcon } from '@heroicons/react/outline'
-import { Input } from './Input'
+import  Input  from './Input'
 import { Post } from './Post'
 
 
-export const Feed = () => {
+export default function Feed()  {
 
     const posts= [
         {

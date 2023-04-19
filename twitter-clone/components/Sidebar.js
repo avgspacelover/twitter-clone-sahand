@@ -2,7 +2,7 @@ import { SidebarMenuItem } from "./SidebarMenuItem"
 import { HashtagIcon, HomeIcon} from "@heroicons/react/solid"
 import {BellIcon,BookOpenIcon, ClipboardIcon, DotsCircleHorizontalIcon, DotsHorizontalIcon, HashTagIcon, InboxIcon, UserIcon} from "@heroicons/react/outline"
 import Image from "next/image"
-
+import {useSession} from "next-auth/react";
 
 export const Sidebar = () => {
   return (

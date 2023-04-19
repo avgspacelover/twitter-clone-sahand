@@ -1,11 +1,15 @@
 import Head from 'next/head'
-import { Feed } from '../components/Feed'
+import { useEffect } from 'react'
+import Feed from '../components/Feed'
 import { Sidebar } from '../components/Sidebar'
 import { Widgets } from '../components/Widgets'
 
 
 
 export default function Home({newsResults, randomUsersResults}) {
+
+
+
   return (
     <div>
       <Head>
@@ -19,7 +23,7 @@ export default function Home({newsResults, randomUsersResults}) {
 
        <Feed />
 
-       <Widgets newsResults={newsResults?.articles} randomUsersResults={randomUsersResults.results} />
+      <Widgets newsResults={newsResults.articles} randomUsersResults={randomUsersResults.results} /> 
 
       </main>
 
@@ -45,6 +49,7 @@ export async function getServerSideProps(){
   return {
     props:{
       newsResults,
+      randomUsersResults,
     }
   };
 }
