@@ -12,7 +12,20 @@ export default NextAuth({
   ],
 
   pages: {
-    signin: "/auth/signin"
+    signIn: "/auth/signin"
+},
+
+callbacks: {
+  async session({session,token}){
+    session.user.username= session.user.name
+    .split(" ")
+    .join("")
+    .toLocaleLowerCase();
+
+    session.user.uid= token.sub;
+
+    return session;
+  },
 },
 
  
